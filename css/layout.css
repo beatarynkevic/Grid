@@ -1,9 +1,11 @@
 .parent {
-
+    display: grid;
+    /* display:inline-grid; for mobile devices */
+    grid-template-columns: 1fr 200px 400px 200px 1fr;
+    background-color: violet;
+    grid-gap: 30px;
 }
     .children {
-
+        background-color: yellowgreen;
     }
-        .grandchildren {
-            
-        }
+    
