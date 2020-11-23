@@ -1,11 +1,25 @@
-.parent {
+.container {
     display: grid;
-    /* display:inline-grid; for mobile devices */
-    grid-template-columns: 1fr 200px 400px 200px 1fr;
-    background-color: violet;
-    grid-gap: 30px;
+    grid-template-areas: 
+    "header header header header header header"
+    "hero hero hero hero hero hero"
+    "testimonials testimonials testimonials testimonials testimonials ads"
+    "services services services services services ads"
+    "freelance freelance freelance freelance freelance ads"
+    "footer footer footer footer footer footer";
+    grid-template-rows: 80px 300px 300px 300px;
+    grid-gap: 10px;
+    background-color: aliceblue;
+    text-align: center;
 }
-    .children {
-        background-color: yellowgreen;
-    }
-    
+   header { grid-area: header; }
+   main { grid-area: hero; }
+   .testimonials { grid-area: testimonials; }
+   .ads {grid-area: ads; }
+   .services {grid-area: services; }
+   .freelance {grid-area: freelance; }
+   footer {grid-area: footer; }
+   .background {
+       background-color: tan;
+   }
+
