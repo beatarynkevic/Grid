@@ -1,0 +1,56 @@
+.container {
+    display: grid;
+    background-color: antiquewhite;
+    grid-template-columns: 1fr 1000px 1fr;
+}
+    .row {
+        grid-column: 2/3;
+        background-color: rgb(104, 182, 250);
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        
+    }
+    .container .row.portfolio .container-portfolio {
+        grid-column: 2 / span 10;
+        background-color: brown;
+    }
+    .row-title {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(72, 138, 18);
+    }
+    .filtering {
+        display: flex;
+        justify-content: center;
+    }
+    .button {
+        margin:5px;
+        border: none;
+        background: inherit;
+        background-color: rgba(52, 252, 158, 0.733);
+    }
+    .container > .row > .col-1 { grid-column: auto / span 1; }
+    .container > .row > .col-2 { grid-column: auto / span 2; }
+    .container > .row > .col-3 { grid-column: auto / span 3; }
+    .container > .row > .col-4 { grid-column: auto / span 4; }
+    .container > .row > .col-5 { grid-column: auto / span 5; }
+    .container > .row > .col-6 { grid-column: auto / span 6; }
+    .container > .row > .col-7 { grid-column: auto / span 7; }
+    .container > .row > .col-8 { grid-column: auto / span 8; }
+    .container > .row > .col-9 { grid-column: auto / span 9; }
+    .container > .row > .col-10 { grid-column: auto / span 10; }
+    .container > .row > .col-11 { grid-column: auto / span 11; }
+    .container > .row > .col-12 { grid-column: auto / span 12; }
+    h1 {
+        background-color: pink;
+    }
+    .container-portfolio {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+        .gallery-item {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
